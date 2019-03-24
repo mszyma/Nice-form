@@ -13,26 +13,27 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="<div class=" col-md-4 col-lg-4">
+    <div class="row justify-content-md-center">
+      <div class="card card-body mt-2 md-2">
 
-      </div>
-      <div class="<div class=" col-md-4 col-lg-4">
 
         <h1 id="title">Cat ordering form</h1>
         <p id="decription"> Please let us know your contact details and your cat orders</p>
-        <form action="" id="survey-form">
+        <form action="" id="survey-form" class="was-walidated">
           <fieldset class="form-group">
             <label for="name-label">Your name</label>
             <input type="text" name="" value="" class="form-control" placeholder="Mario" id="name-label">
           </fieldset>
           <fieldset class="form-group">
             <label for="email-label">Your email</label>
-            <input type="email" name="" value="" class="form-control" placeholder="fluffyjelly@mybowl.co" id="email-label">
+            <input type="email" name="" value="" class="form-control" placeholder="fluffyjelly@mybowl.co" id="email-label" required>
           </fieldset>
           <fieldset class="form-group">
             <label for="number-label">Please enter a number of owned cats</label>
-            <input type="number" class="form-control" id="number-label" placeholder="Please enter a number between 1 and 100. I hope you don't own more than 100 cats">
+            <input type="number" class="form-control" id="number-label" size="2" min="1" max="100" required placeholder="Please enter a number between 1 and 100. I hope you don't own more than 100 cats">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
           </fieldset>
           <fieldset class="form-group">
             <label for="formGroupExampleInput2">Please enter your favorite cats name</label>
@@ -67,46 +68,46 @@
 
           <fieldset class="form-group">
             <label for="">Please select the cat color that you would like to have?</label>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="brown" name="cats-color">
-                Brown
-              </label>
+            <div class="">
+              <div class="checkbox-inline">
+                <label>
+                  <input type="checkbox" value="brown" name="cats-color">
+                  Brown
+                </label>
+              </div>
+              <div class="checkbox-inline">
+                <label>
+                  <input type="checkbox" value="black" name="cats-color">
+                  Black
+                </label>
+              </div>
+              <div class="checkbox-inline">
+                <label>
+                  <input type="checkbox" value="white" name="cats-color">
+                  White
+                </label>
+              </div>
+              <div class="checkbox-inline ">
+                <label>
+                  <input type="checkbox" value="pink">
+                  Pink
+                </label>
+              </div>
             </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="black" name="cats-color">
-                Black
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="white" name="cats-color">
-                White
-              </label>
-            </div>
-            <div class="checkbox ">
-              <label>
-                <input type="checkbox" value="pink">
-                Pink
-              </label>
-            </div>
+
           </fieldset>
 
 
-<fieldset class="form-group">
-  <label for="">Please enter your additional comments</label>
-  <div class="">
-    <textarea name="name" rows="8" cols="80"></textarea>
-  </div>
+          <fieldset class="form-group">
+            <label for="">Please enter your additional comments</label>
+            <div class="">
+              <textarea name="name" rows="4" cols="80"></textarea>
+            </div>
 
-</fieldset>
-<button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </fieldset>
+          <button type="submit" id="submit" class="btn btn-primary mb-2">Submit</button>
 
         </form>
-      </div>
-      <div class="<div class=" col-md-4 col-lg-4">
-
       </div>
 
     </div>

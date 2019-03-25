@@ -14,26 +14,24 @@
 <body>
   <div class="container">
     <div class="row justify-content-md-center">
-      <div class="card card-body mt-2 md-2">
+      <div class="card card-body mario-card">
+        <div class="mx-auto">
+          <h1  id="title" >Cat ordering form</h1>
+          <p class="text-center" id="description"> Please let us know your contact details and your cat orders</p>
+        </div>
 
-
-        <h1 id="title">Cat ordering form</h1>
-        <p id="decription"> Please let us know your contact details and your cat orders</p>
         <form action="" id="survey-form" class="was-walidated">
           <fieldset class="form-group">
-            <label for="name-label">Your name</label>
-            <input type="text" name="" value="" class="form-control" placeholder="Mario" id="name-label">
+            <label for="name" id="name-label">Your name</label>
+            <input type="text" name="" value="" class="form-control" placeholder="Mario" id="name" required>
           </fieldset>
           <fieldset class="form-group">
-            <label for="email-label">Your email</label>
-            <input type="email" name="" value="" class="form-control" placeholder="fluffyjelly@mybowl.co" id="email-label" required>
+            <label for="email" id="email-label">Your email</label>
+            <input type="email" name="" value="" class="form-control" placeholder="fluffyjelly@mybowl.co" id="email" required>
           </fieldset>
           <fieldset class="form-group">
-            <label for="number-label">Please enter a number of owned cats</label>
-            <input type="number" class="form-control" id="number-label" size="2" min="1" max="100" required placeholder="Please enter a number between 1 and 100. I hope you don't own more than 100 cats">
-            <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
+            <label for="number" id="number-label">Please enter a number of owned cats</label>
+            <input type="number" class="form-control" id="number" size="2" min="1" max="100" required placeholder="Please enter a number between 1 and 100. I hope you don't own more than 100 cats">
           </fieldset>
           <fieldset class="form-group">
             <label for="formGroupExampleInput2">Please enter your favorite cats name</label>
@@ -101,7 +99,7 @@
           <fieldset class="form-group">
             <label for="">Please enter your additional comments</label>
             <div class="">
-              <textarea name="name" rows="4" cols="80"></textarea>
+              <textarea name="name" rows="4"></textarea>
             </div>
 
           </fieldset>
@@ -112,14 +110,11 @@
 
     </div>
 
-    <div class="col-xs|sm|md|lg|xl-1-12">
-
-    </div>
-
   </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 </body>
 
